@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="274dp"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/txtTitle"
+        android:textSize="48sp" />
+
+    <EditText
+        android:id="@+id/txtTickets"
+        android:layout_width="327dp"
+        android:layout_height="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="@string/txtTickets"
+        android:inputType="number"
+        android:textSize="36sp" />
+
+    <Spinner
+        android:id="@+id/txtGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="224dp"
+        android:entries="@array/txtGroup" />
+
+    <Button
+        android:id="@+id/btnCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="262dp"
+        android:text="@string/btnCost"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="347dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="194dp"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/imgConcert"
+        android:layout_width="314dp"
+        android:layout_height="133dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="33dp"
+        android:contentDescription="@string/description"
+        app:srcCompat="@drawable/concert" />
+
+</RelativeLayout>
